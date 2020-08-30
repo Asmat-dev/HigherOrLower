@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:ignore="ContentDescription"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="320dp"
-        android:layout_height="154dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".215"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:background="@color/lightBlack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/higherlower" />
+        app:srcCompat="@drawable/higherlower"
+         />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -38,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="8"
             android:padding="5dp"
-            android:text="Set the maximum Number "
+            android:text="@string/set_the_maximum_number"
             android:textStyle="bold" />
 
         <EditText
@@ -46,16 +49,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:hint="eg 150"
+            android:hint="@string/eg_150"
             android:inputType="number"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            tools:ignore="Autofill" />
         <Button
             android:id="@+id/setrangebtnid"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:textColor="@android:color/white"
+            android:background="@color/buttonColor"
             android:layout_marginStart="8dp"
-            android:text="Set"/>
+            android:text="@string/set"/>
 
     </LinearLayout>
 
@@ -70,28 +76,34 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:textColor="@color/reddish"
-        android:text="I'm thinking of a number between ! "
+        android:text="@string/i_m_thinking_of_a_number_between"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
 
     <EditText
         android:id="@+id/enteredNumberId"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:ems="10"
+        app:layout_constraintWidth_percent=".6"
         android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tellRangetextviewId" />
+        app:layout_constraintTop_toBottomOf="@+id/tellRangetextviewId"
+        tools:ignore="Autofill,LabelFor" />
 
     <Button
         android:id="@+id/guessButtonId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="  Guess  "
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="@string/guess"
+        android:textColor="@android:color/white"
+        android:background="@color/buttonColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enteredNumberId" />
