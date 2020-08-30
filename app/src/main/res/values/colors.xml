@@ -6,4 +6,6 @@
 
     <color name="lightBlack">#4B4C4C</color>
     <color name="reddish">#F13D2F</color>
+
+    <color name="buttonColor">#40CF80</color>
 </resources>

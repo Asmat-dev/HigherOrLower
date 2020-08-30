@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">HigherOrLower</string>
+    <string name="set_the_maximum_number">Set the maximum Number</string>
+    <string name="eg_150">eg 150</string>
+    <string name="set">Set</string>
+    <string name="i_m_thinking_of_a_number_between">I\'m thinking of a number between !</string>
+    <string name="guess">Guess</string>
+    <string name="number_between">\"I\'m thinking of a number between 1 and \"</string>
+    <string name="enter_max_number">Enter Max Number First!</string>
+    <string name="enter_max_first">Enter Max Number First!</string>
+    <string name="enter_guessed_number">Enter Guess Number!</string>
+    <string name="lower_than">\"Lower than \"</string>
+    <string name="higher_than">\"Higher than \"</string>
+    <string name="congrats">Congrats! You guessed it right</string>
 </resources>
